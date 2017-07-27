@@ -3,6 +3,7 @@ package system.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import system.dao.UserDao;
+import system.model.User;
 
 import java.util.List;
 
@@ -17,7 +18,7 @@ public class UserService {
     private UserDao dao;
 
     //additional checks could be added
-    public List getUsers() {
+    public List<User> getUsers() {
         return dao.getUsers();
     }
 
